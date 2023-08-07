@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: aquamarine;
+    display: grid;
+    grid-template: 100px 100px 100px / 100px 100px 100px;
+    gap: 5px;
+
+    .box{
+        background-color: aliceblue;
+    }
+}

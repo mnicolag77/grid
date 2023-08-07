@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr); //fr es fraccion osea que se divide en fracciones
+    grid-template-areas: "header header"//el header ocupa dos columnas
+                          "main aside" //una columna para boy otra para aside
+                          "footer footer"; //dos columnas para footer
+    header{
+        background-color: aquamarine;
+        grid-area: header;
+
+    }
+    main{
+        background-color: antiquewhite;
+        grid-area: main;
+
+    }
+    aside{
+        background-color: blue;
+        grid-area: aside;
+    }
+    footer{
+        background-color:aqua;
+        grid-area: footer;
+    }
+}   
